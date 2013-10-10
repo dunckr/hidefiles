@@ -1,0 +1,7 @@
+{
+  "repo": "SublimeHideFiles",
+  "name": "HideFiles",
+  "description": "Some bracket manipulation, selection, and insertion commands.",
+  "author": "Duncan Beaton (dunckr)",
+  "homepage": "https://github.com/dunckr/SublimeHideFiles"
+}
