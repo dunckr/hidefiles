@@ -1,6 +1,8 @@
 HideFiles plugin for Sublime Text 2
 =====================================
 
+Show and hide specific file types easily.
+
 Installation
 ------------
 
@@ -14,10 +16,36 @@ Or:
     - Windows: %APPDATA%/Sublime Text 2/Packages/
     - Linux: ~/.Sublime Text 2/Packages/
 
-2. clone this repo
-3. Install keymaps for the commands (see Example.sublime-keymap for my preferred keys)
+2. Clone this repo
+
+Configuration
+------------
+
+Change the **hidefiles.sublime-settings**:
+
+    {
+      "coffee": ["*.js","*.md","*.json","*.txt"],
+      "js": ["*.coffee","*.html","*.css"]
+    }
+
+Where each property specifies the files in an array that are to be hidden when activated.
 
 Commands
---------
+------------
 
-`bracketeer`: Surrounds selected text with braces (or quotes - anything, really), and prevents indentation mishaps.
+`hide_files`: Hides the files for the currently opened file type
+
+`show_files`: Shows the files for the currently opened file type
+
+Default Keymap
+------------
+
+hide_files
+`ctrl+shift+-`
+
+show_files
+`ctrl+shift+=`
+
+
+____
+

@@ -1,12 +1,4 @@
 {
-  "coffeescript":
-      {
-        "folder_exclude_patterns": [".tmp"],
-        "file_exclude_patterns": ["*.js"]
-      },
-  "javascript":
-      {
-        "folder_exclude_patterns": [".tmp"],
-        "file_exclude_patterns": ["*.coffeescript"]
-      }
+  "coffee": ["*.js","*.md","*.json","*.txt"],
+  "js": ["*.coffee","*.html","*.css"]
 }

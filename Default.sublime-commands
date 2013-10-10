@@ -1,10 +1,10 @@
 [
     {
-        "caption": "HideFiles: Next",
-        "command": "hide_files_next"
+        "caption": "HideFiles: Hide",
+        "command": "hide_files"
     },
     {
-        "caption": "HideFiles: Previous",
-        "command": "hide_files_previous"
+        "caption": "HideFiles: Show",
+        "command": "show_files"
     }
 ]
