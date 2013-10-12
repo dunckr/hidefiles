@@ -1,7 +1,7 @@
 {
   "repo": "SublimeHideFiles",
   "name": "HideFiles",
-  "description": "Some bracket manipulation, selection, and insertion commands.",
+  "description": "Show and hide specific files easily.",
   "author": "Duncan Beaton (dunckr)",
-  "homepage": "https://github.com/dunckr/SublimeHideFiles"
+  "homepage": "https://github.com/dunckr/hidefiles"
 }

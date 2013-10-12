@@ -1,7 +1,7 @@
 HideFiles plugin for Sublime Text 2
 =====================================
 
-Show and hide specific file types easily.
+Show and hide specific files easily.
 
 Installation
 ------------
