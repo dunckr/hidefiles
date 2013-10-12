@@ -50,26 +50,27 @@ class Files():
 
   def __init__(self,file_name):
     self.file_type = file_name.split('.').pop()
+    self.setExlcusions()
+
+  def setExlcusions(self):
+    hidefiles = sublime.load_settings("hidefiles.sublime-settings")
+    self.exclusions = hidefiles.get(self.file_type)
 
   def hide(self):
-    hidefiles = sublime.load_settings("hidefiles.sublime-settings")
-    exclusions = hidefiles.get(self.file_type)
-    if exclusions is not None:
+    if self.exclusions is not None:
       settings = sublime.load_settings("Preferences.sublime-settings")
       current_list = settings.get("file_exclude_patterns")
-      for exclude in exclusions:
+      for exclude in self.exclusions:
         if exclude not in current_list:
           current_list.append(exclude)
       settings.set("file_exclude_patterns", current_list)
       sublime.save_settings("Preferences.sublime-settings")
 
   def show(self):
-    hidefiles = sublime.load_settings("hidefiles.sublime-settings")
-    exclusions = hidefiles.get(self.file_type)
-    if exclusions is not None:
+    if self.exclusions is not None:
       settings = sublime.load_settings("Preferences.sublime-settings")
       current_list = settings.get("file_exclude_patterns")
-      for exclude in exclusions:
+      for exclude in self.exclusions:
         current_list.remove(exclude)
       settings.set("file_exclude_patterns", current_list)
       sublime.save_settings("Preferences.sublime-settings")
