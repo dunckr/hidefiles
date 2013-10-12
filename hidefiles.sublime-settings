@@ -1,4 +1,5 @@
 {
   "coffee": ["*.js","*.md","*.json","*.txt"],
-  "js": ["*.coffee","*.html","*.css"]
+  "js": ["*.coffee","*.html","*.css"],
+  "py": ["*.py","*.json"]
 }
