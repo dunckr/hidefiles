@@ -46,6 +46,9 @@ hide_files
 show_files
 `ctrl+shift+=`
 
-
 ____
 
+
+## License
+
+MIT © [Duncan Beaton](http://dunckr.com)
